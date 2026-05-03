@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #4a40e0;
+  --color-primary-container: #9795ff;
+  --color-on-primary: #f4f1ff;
+  --color-on-primary-container: #14007e;
+
+  --color-secondary: #702ae1;
+  --color-secondary-container: #dcc9ff;
+  --color-on-secondary: #f8f0ff;
+  --color-on-secondary-container: #5b00c7;
+
+  --color-tertiary: #0d7df2;
+  --color-tertiary-container: #c8e3ff;
+  --color-on-tertiary-container: #003259;
+
+  --color-background: #faf4ff;
+  --color-on-background: #32294f;
+
+  --color-surface: #faf4ff;
+  --color-on-surface: #32294f;
+  --color-surface-variant: #e2d7ff;
+  --color-on-surface-variant: #5f557f;
+
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5eeff;
+  --color-surface-container: #ede4ff;
+  --color-surface-container-high: #e8deff;
+  --color-surface-container-highest: #e2d7ff;
+
+  --color-outline: #8878b0;
+  --color-outline-variant: #cac1eb;
+
+  --color-inverse-surface: #1e1340;
+  --color-on-inverse-surface: #f5eeff;
+
+  --color-error: #b41340;
+  --color-on-error: #ffefef;
+
+  --font-headline: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}
+
+.headline-font,
+.font-headline {
+  font-family: var(--font-headline);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.25s ease-out both;
+}
